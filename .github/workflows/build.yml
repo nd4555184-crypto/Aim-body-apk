@@ -17,4 +17,4 @@ jobs:
     - name: Install MAUI Workload
       run: dotnet workload install maui-android
     - name: Build APK
-      run: dotnet publish -f net8.0-android -c Release -p:AndroidPackageFormat=apk
+      run: dotnet publish -f net9.0-android -c Release -p:AndroidPackageFormat=apk
