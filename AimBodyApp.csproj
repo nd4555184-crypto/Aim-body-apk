@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <UseMaui>true</UseMaui>
+    <ApplicationId>com.demo.aimbody</ApplicationId>
+    <ApplicationTitle>Aim Body App</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
+  </PropertyGroup>
+</Project>
