@@ -1,0 +1,20 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+    - name: Install MAUI Workload
+      run: dotnet workload install maui-android
+    - name: Build APK
+      run: dotnet publish -f net8.0-android -c Release -p:AndroidPackageFormat=apk
